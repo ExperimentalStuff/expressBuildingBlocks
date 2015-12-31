@@ -1,0 +1,14 @@
+{
+  "name": "building_blocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WeiCheng Yang <rainyday309@gmail.com> (http://rainyyyy.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
