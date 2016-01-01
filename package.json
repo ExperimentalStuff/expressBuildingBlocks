@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js"
   },
   "author": "WeiCheng Yang <rainyday309@gmail.com> (http://rainyyyy.github.io/)",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "express": "^4.13.3"
   },
   "devDependencies": {
+    "mocha": "^2.3.4",
     "supertest": "^1.1.0"
   }
 }
