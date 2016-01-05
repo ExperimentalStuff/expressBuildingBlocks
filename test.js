@@ -13,4 +13,10 @@ describe('Requests to the root path', function(){
   });
 });
 
-
+describe('Listing cities on /cities', function(){
+  it('Return 200 status code',function(done){
+    request(app)
+	  .get('/cities')
+	  .expect(200,done)
+  });
+});
