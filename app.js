@@ -11,4 +11,7 @@ app.get('/cities', function(request, response){
   response.json(cities);
 });
 
+app.post('/cities', function(request, response){
+ response.sendStatus(201);
+});
 module.exports = app;
