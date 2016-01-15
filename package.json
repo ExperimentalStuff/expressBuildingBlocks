@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "NODE_ENV=test mocha test.js"
   },
   "author": "WeiCheng Yang <rainyday309@gmail.com> (http://rainyyyy.github.io/)",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.2",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "hiredis": "^0.4.1",
+    "redis": "^2.4.2"
   },
   "devDependencies": {
     "mocha": "^2.3.4",
