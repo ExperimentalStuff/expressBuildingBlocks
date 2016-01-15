@@ -10,10 +10,9 @@ app.use(express.static('public'));
 var redis = require('redis');
 if (process.env.REDISTOGO_URL) {
   var rtg   = require("url").parse(process.env.REDISTOGO_URL);
-  var client = require("redis").createClient(rtg.port, rtg.hostname);
+  var client = redis.createClient(rtg.port, rtg.hostname);
 
   client.auth(rtg.auth.split(":")[1]);
-  client.select('production'.length);
 } else {
   var client = redis.createClient();
   client.select((process.env.NODE_ENV || 'development').length);
